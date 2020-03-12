@@ -13,18 +13,40 @@ import java.util.Scanner;
  */
 public class evenOdd {
     
-    public static void main(String[] args) {
-       
-        int number;
-        Scanner scn = new Scanner(System.in);
-        System.out.print("Enter Number ");
-        number = scn.nextInt();
-        
-        if ((number %2) == 0) 
-            System.out.print("Enter Number is EVEN ");
-         else 
-            System.out.print("Enter Number is ODD ");
+      public static void main (String [] args){
+        int r = 0;
+        int k = 0;
+        int iseven = 0;
+        int isodd =0;
+        System.out.println("iterations" + " even" + " odd");
+        //loop to run 10 iterations
 
-    }
-    
+        for (r = 1; r <= 10; r++){
+
+        //loop to generate random numbers
+
+           for (int j = 1; j <= 10; j++){
+           int n = (int)(Math.random() * 1000 + 1);
+
+            int even = isEven(n);
+               if (even == 1){
+            iseven++;
+
+               }
+               else
+            isodd++;
+
+            }
+               System.out.println(r + " " + iseven + " " + isodd);
+
+            }
+        
+           }
+           public static int isEven(int number){
+                if ((number % 2) == 0)
+                   return 1;
+                else
+                   return 2;
+                   }
+   
 }
