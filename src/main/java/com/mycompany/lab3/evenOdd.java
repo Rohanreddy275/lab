@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author satyanagasaitejaadabala
+ * @author srohan
  */
 public class evenOdd {
     
@@ -18,12 +18,10 @@ public class evenOdd {
         int k = 0;
         int iseven = 0;
         int isodd =0;
-        System.out.println("iterations" + " even" + " odd");
-        //loop to run 10 iterations
+        System.out.println("Loop running" + " even" + " odd");
+        
 
         for (r = 1; r <= 10; r++){
-
-        //loop to generate random numbers
 
            for (int j = 1; j <= 10; j++){
            int n = (int)(Math.random() * 1000 + 1);
