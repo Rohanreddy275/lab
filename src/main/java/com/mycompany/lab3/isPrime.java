@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author satyanagasaitejaadabala
+ * @author srohan
  */
 public class isPrime {
     
@@ -43,5 +43,5 @@ public class isPrime {
             return false;
         else
             return true;
-    }// end isPrime method
+    }
 }
